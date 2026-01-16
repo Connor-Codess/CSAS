@@ -1,0 +1,37 @@
+sequence,scoring_rate,count,avg_points,steal_rate,blank_rate
+Draw → Draw-O → Raise / Tap-back-C,0.857,14,1.429,0.143,0.0
+Draw-O → Raise / Tap-back-O → Draw,0.8,10,2.1,0.3,0.0
+Draw → Raise / Tap-back-O → Draw-C,0.75,20,1.7,0.25,0.0
+Wick / Soft Peeling-O → Draw-O → Draw-O,0.727,11,1.455,0.273,0.0
+Draw-C → Draw-O → Draw,0.667,75,1.4,0.333,0.0
+Draw → Raise / Tap-back-O → Draw,0.643,14,0.929,0.286,0.071
+Draw-O → Draw-O → Draw-O,0.64,25,1.28,0.36,0.0
+Draw-O → Draw-C → Draw-C,0.636,11,1.818,0.364,0.0
+Draw → Draw-C → Draw,0.617,282,1.174,0.387,0.0
+Draw-C → Draw-C → Draw-C,0.609,23,0.957,0.391,0.0
+Draw → Draw-C → Raise / Tap-back-C,0.6,20,1.55,0.4,0.05
+Wick / Soft Peeling-O → Draw-O → Draw,0.6,15,1.0,0.4,0.0
+Draw → Draw-O → Draw-C,0.585,193,1.207,0.43,0.0
+Draw → Draw-C → Draw-C,0.582,177,1.096,0.429,0.0
+Draw → Draw-O → Draw-O,0.58,238,1.122,0.429,0.0
+Draw → Draw-O → Draw,0.572,283,1.025,0.431,0.0
+Draw-O → Draw-C → Draw,0.571,56,1.286,0.446,0.0
+Draw-C → Draw-C → Draw,0.569,72,1.167,0.431,0.0
+Draw → Raise / Tap-back-C → Draw,0.562,16,1.25,0.438,0.0
+Draw → Draw-O → Raise / Tap-back,0.548,31,0.871,0.452,0.0
+Draw → Draw-C → Draw-O,0.547,150,1.113,0.473,0.0
+Draw → Draw → Draw,0.526,19,0.789,0.474,0.0
+Wick / Soft Peeling-C → Draw-O → Draw,0.5,12,0.583,0.5,0.0
+Wick / Soft Peeling-C → Guard-C → Draw,0.5,10,1.1,0.5,0.0
+Draw → Draw-C → Raise / Tap-back,0.472,36,0.889,0.528,0.0
+Draw-O → Draw-C → Draw-O,0.471,17,0.882,0.529,0.0
+Draw-O → Draw-O → Draw,0.471,70,0.871,0.529,0.0
+Draw-C → Draw-O → Draw-C,0.455,11,1.0,0.455,0.091
+Draw → Raise / Tap-back-C → Draw-C,0.455,11,1.364,0.545,0.0
+Draw → Raise / Tap-back-O → Draw-O,0.455,11,0.727,0.545,0.0
+Draw → Draw-O → Raise / Tap-back-O,0.448,29,1.069,0.586,0.0
+Draw → Raise / Tap-back-C → Raise / Tap-back,0.417,12,0.667,0.583,0.0
+Wick / Soft Peeling-O → Draw → Draw-O,0.333,12,0.583,0.667,0.0
+Draw → Draw-C → Raise / Tap-back-O,0.3,10,0.4,0.7,0.0
+Raise / Tap-back-O → Draw-O → Draw,0.3,10,0.5,0.7,0.0
+Front-C → Draw-C → Draw,0.231,13,0.538,0.769,0.0

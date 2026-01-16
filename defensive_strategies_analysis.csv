@@ -1,0 +1,6 @@
+strategy_type,avg_pp_points,std_pp_points,count,steal_rate,blank_rate
+Moderately Passive,0.1,0.308,20,0.1,0.0
+Positioning Defense,0.368,0.831,19,0.526,0.0
+Mixed Defense,0.49,1.196,96,0.229,0.0
+Moderately Aggressive,0.529,2.183,17,0.059,0.059
+Passive Defense (Blank Attempt),0.696,1.571,135,0.207,0.0
