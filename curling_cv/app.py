@@ -321,6 +321,14 @@ with gr.Blocks(title="Curling CV Dashboard") as demo:
 
             analyze_btn = gr.Button("Analyze", variant="primary")
 
+            gr.Examples(
+                examples=[["Test_Image_huggingFace.png", "Team 2 (Yellow)", 4, 5, "Top end", 0, 0, False, "", ""]],
+                inputs=[image_input, hammer_input, end_input, shot_input,
+                        sheet_end_input, score_t1, score_t2,
+                        powerplay_input, t1_count_input, t2_count_input],
+                label="▶  Try a sample image — click the row below then hit Analyze",
+            )
+
         # ── Detection + Correction ──────────────────────────────────────────
         with gr.Column(scale=1):
             gr.Markdown("### Detection Confirmation")
