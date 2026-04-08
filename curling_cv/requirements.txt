@@ -1,0 +1,10 @@
+opencv-python
+numpy
+scipy
+scikit-learn
+xgboost
+Pillow
+matplotlib
+gradio
+pandas
+pytest
