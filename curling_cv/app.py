@@ -23,19 +23,9 @@ def _bgr_to_rgb(bgr_array):
     return cv2.cvtColor(bgr_array, cv2.COLOR_BGR2RGB)
 
 
-def _confidence_badge(confidence_str):
-    if confidence_str.startswith('High'):
-        return f"✅ {confidence_str}"
-    elif confidence_str.startswith('Moderate'):
-        return f"⚠️  {confidence_str}"
-    else:
-        return f"🔴 {confidence_str}"
-
-
 def _result_to_outputs(result):
-    """Convert a pipeline result dict into the 7 Gradio output values."""
+    """Convert a pipeline result dict into the 6 Gradio output values."""
     annotated_rgb = _bgr_to_rgb(result['annotated_image'])
-    confidence_text = _confidence_badge(result['confidence'])
 
     sp = result['scoring_prob']
     stp = result['steal_prob']
@@ -91,7 +81,6 @@ def _result_to_outputs(result):
 
     return (
         annotated_rgb,
-        confidence_text,
         probs,
         features_display,
         result['advice'],
@@ -126,7 +115,7 @@ def analyze(
     team1_stone_count_str,
     team2_stone_count_str,
 ):
-    empty = (None, "", "", "", "", "", None,
+    empty = (None, "", "", "", "", None,
              [], {}, None, "Upload an image and click Analyze.", "")
 
     if image is None:
@@ -153,7 +142,7 @@ def analyze(
             team2_stone_count=t2_count,
         )
     except Exception as e:
-        return (None, "", "", "", "", "", None,
+        return (None, "", "", "", "", None,
                 [], {}, None, f"Pipeline error: {e}", "")
 
     # Store correction state: stones in crop-pixel space (before transform)
@@ -359,8 +348,6 @@ with gr.Blocks(title="Curling CV Dashboard") as demo:
 
             rerun_btn = gr.Button("🔄  Rerun with corrected stones", variant="secondary")
 
-            confidence_output = gr.Textbox(label="Model confidence", interactive=False)
-
     # ── Results ─────────────────────────────────────────────────────────────
     with gr.Row():
         with gr.Column():
@@ -380,7 +367,7 @@ with gr.Blocks(title="Curling CV Dashboard") as demo:
     # ── Event wiring ─────────────────────────────────────────────────────────
 
     _main_outputs = [
-        annotated_output, confidence_output,
+        annotated_output,
         probs_output, features_output, advice_output,
         final_score_output, gif_output,
     ]
